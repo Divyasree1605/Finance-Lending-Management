@@ -1,0 +1,116 @@
+<nav>
+    <div class="logo">
+        <img src="https://app.brandmark.io/nounpreview/5173648.png" alt="Smart Lend Logo" width="50px" height="50px">
+        <a href="">SmartLend</a>
+    </div>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/aboutus">About Us</a></li>
+        <li><a routerLink="/loantypes">Loan Types</a></li>
+        <li><a routerLink="/contactus">Contact Us</a></li>
+        <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink="/signup">Sign Up</a></li>
+
+    </ul>
+
+</nav>
+<router-outlet>
+    <body>
+<h1>CONTACT US</h1>
+<h2>We're here to serve as you live on mission.</h2>
+<h2>How can we help?</h2>
+<div class="contact-info">
+    <div class="address">
+         <img src="https://i.pinimg.com/474x/f7/d6/c6/f7d6c698f0d756ff229703f614b72003.jpg">
+          <h3>Address:</h3>
+          <h4>Smart loan office</h4>
+          <p>6950 S.Ambedkar Road,</p>
+          <p>chennai</p>
+          <p>Jangaon, Telangana</p>
+      </div>
+      <div class="phone">
+          <img src="https://i.pinimg.com/564x/37/be/da/37beda9d8a3eea99f777b4d2145f1fc5.jpg">
+          <h3>Phone:</h3>
+          <h4>Smart loan contact</h4>
+          <p>+9182683412 phone</p>
+          <p>63037542749 mobile</p>
+      </div>
+      <div class="emailid">
+          <img src="https://cdn5.vectorstock.com/i/1000x1000/12/04/mail-icon-in-flat-style-email-symbol-vector-28061204.jpg">
+          <h3>Emailid:</h3>
+          <h4>Smart loan email:</h4>
+          <p>smartloan</p>
+      </div>
+  </div>
+  <form (ngSubmit)="onSubmitContactUsForm()">
+    <div>
+        <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" formControlName="name"/>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"id="error">
+            <div *ngIf="name.hasError('required')">
+                First name can not be left blank..
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <label for="emailid">Email Id:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" formControlName="emailid"/>
+        <div *ngIf="emailid.invalid && (emailid.dirty || emailid.touched)" id="error">
+            <div *ngIf="emailid.hasError('required')">
+                Email id can not be left blank..
+            </div>
+            <div *ngIf="emailid.hasError('minlength')">
+                Email id can have minimum 5 characters..
+            </div>
+            <div *ngIf="emailid.hasError('maxlength')">
+                Email id can have maximum 60 characters..
+            </div>
+            <div *ngIf="emailid.hasError('pattern')">
+                Email id can be alphabetic, numbers or . &#64; only..
+            </div>
+        </div>
+    </div>
+    <div>
+        <label for="telephone">Telephone:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" formControlName="telephone"/>
+        <div *ngIf="telephone.invalid && (telephone.dirty || emailid.touched)" id="error">
+            <div *ngIf="telephone.hasError('required')">
+                telephone can not be left blank..
+            </div>
+            <div *ngIf="telephone.hasError('minlength')">
+                Email id can have minimum 10 characters..
+            </div>
+            <div *ngIf="telephone.hasError('pattern')">
+                Email id can be numbers only..
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="submit" [disabled]="contactUsForm.invalid">Submit</button>
+    </div>
+    
+    <div *ngIf="!confirmationMessage && contactUsForm.invalid" id="error">
+        <h3>Please fill form according to required information...</h3>
+    </div>
+    
+    <div *ngIf="confirmationMessage" style="color:blue;">
+        <h3>Contact us Form submitted successfully for {{contactUsFormData.name}}</h3>
+    </div>
+</form>
+
+     
+     <div class="footer">
+        <p>Copyright &copy; 2024 Smart lend.
+            <a href="#" class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" width="2px" height="2px"></a>
+            <a href="#" class="icon"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png" width="3px" height="3px" ></a>
+            <a href="#" class="icon"><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" width="3px" height="3px" ></a>
+        </p>
+        </div>
+
+    
+</body>
+</router-outlet>
+<div class="footer">
+    <p>Copyright &copy; 2024 Smart lend.</p>
+</div>

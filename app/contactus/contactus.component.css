@@ -1,0 +1,218 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main{
+  width: 100%;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color:  black;
+  padding: 0px 100px; 
+  display: flex;
+  justify-content: space-between;
+}
+.logo img{
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin as needed */
+  filter: invert(100%);
+  
+}
+
+.logo a{
+  font-size: 35px;
+  color: lightcoral;
+  font-weight: bold;
+  font-style: italic;
+}
+a{
+  text-decoration: none;
+  color: bisque;
+  font-size: 20px ;
+  transition: 0.2s all ease;
+}
+ul{
+  margin: 0px;
+  margin-right: 100px;
+}
+ul li{
+  float: left;
+  padding: 0px 20px;
+  list-style: none;
+}
+ul li a:hover{
+  color: lightcoral;
+}
+#error{
+  color:red;
+}
+
+div{
+  margin: 12px 12px;
+}
+
+input:invalid{
+  box-shadow: 0 0 5px 1px red;
+}
+select:invalid{
+  box-shadow: 0 0 5px 1px red;
+}
+textarea:invalid{
+  box-shadow: 0 0 5px 1px red;
+}
+body {
+  
+  background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-simple-and-easy-financial-management-financial-service-poster-design-picture-image_1077541.jpg');
+  background-size: auto;
+  
+}
+
+  .contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.address, .phone, .emailid {
+  flex: 1;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+h3{
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+h2{
+  text-align: center;
+}
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  padding: 100px;
+ 
+}
+label {
+  display: flexbox;
+  margin-left: 9px;
+  width: 100px;
+  display:inline-block;
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+
+}
+#form{
+  border-radius: 10px;
+  width: 290px;
+  padding: 4px;
+  align-items: center;
+}
+
+input[type="text"]{
+  padding: 12px;
+  border:2px solid #efc9af;
+  border-radius: 80px;
+}
+input[type="tel"],
+input[type="emailid"],
+button {
+  width: 10%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#error{
+  color:red;
+}
+div{
+  justify-content: space-evenly;
+  margin-left: 50px;
+}      
+input:invalid{
+      box-shadow: 0 0 5px 1px red;
+}
+select:invalid{
+      box-shadow: 0 0 5px 1px red;
+}
+textarea:invalid{
+      box-shadow: 0 0 5px 1px red;
+}
+
+
+button:hover {
+  background-color: #45a049;
+  align-content: center;
+}
+img {
+    width: 50px; 
+   height: auto; 
+}
+.footer {
+          position:left;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+          height: 5%;
+          margin:10px;
+          font-size: 20px;
+          display: inline-block;
+      }
+
+
+.copy-right p {
+  margin: 0;
+  font-size: 20px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+  }
